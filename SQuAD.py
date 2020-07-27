@@ -81,22 +81,3 @@ print(loss)
 print(start_scores.shape)
 print(end_scores.shape)
 
-
-# text = "Replace me by any text you'd like."
-# text1='l love my cat'
-# start_positions=torch.tensor([1])
-# end_positions=torch.tensor([3])
-# tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-# model = BertForQuestionAnswering.from_pretrained("bert-base-uncased")
-#
-# encoded_input = tokenizer.encode_plus(text, add_special_tokens=True,return_tensors='pt')
-# print(encoded_input)
-# loss,strat_scores,end_scores = model(**encoded_input,start_positions=start_positions,end_positions=end_positions)
-# print(loss)
-# print(strat_scores)
-# print(torch.softmax(strat_scores,dim=1))
-# print('*******')
-# print(end_scores.shape)
-# print(end_scores)
-# print(torch.softmax(end_scores,dim=1))
-
